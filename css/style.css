@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,30 +16,29 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 h2 {
   padding: 20px 10px;
 }
-ul{
+ul {
   list-style-type: none;
 }
-ul>li{
+ul > li {
   display: inline-block;
-  padding: 20px 10px;  
+  padding: 20px 10px;
 }
-@media only screen and (max-width:900px) {
-  body{
-    background-color: #666;
+@media only screen and (max-width: 900px) {
+  body {
+    /* background-color: #666; */
   }
   nav .flex {
     flex-direction: column;
   }
 }
-@media only screen and (max-width:768px) {
-  body{
-    background-color: red;
+@media only screen and (max-width: 768px) {
+  body {
+    /* background-color: red; */
   }
   nav .flex {
     flex-direction: column;
@@ -48,11 +47,11 @@ ul>li{
 
 a {
   text-decoration: none;
-  color:#000;
+  color: #000;
 }
 a:hover {
-   border-bottom: 1px solid #333;  
-   transition: 0.2s ease-in-out; 
+  border-bottom: 1px solid #333;
+  transition: 0.2s ease-in-out;
 }
 
 .category .flex {
@@ -60,22 +59,22 @@ a:hover {
 }
 
 .category-item {
-  height:300px;
+  height: 300px;
   width: 33.33%;
-  flex-grow:1;
+  flex-grow: 1;
 }
 
 .shoes {
-  background: url('../images/categories/shoes.jpg') no-repeat center/cover;    
+  background: url("../images/categories/shoes.jpg") no-repeat center/cover;
 }
 .hats {
-  background: url('../images/categories/hats.jpg') no-repeat center/cover;    
+  background: url("../images/categories/hats.jpg") no-repeat center/cover;
 }
 .t-shirt {
-  background: url('../images/categories/tshirts.jpg') no-repeat center/cover;    
+  background: url("../images/categories/tshirts.jpg") no-repeat center/cover;
 }
 .glasses {
-  background: url('../images/categories/sunglasses.jpg') no-repeat center/cover;    
+  background: url("../images/categories/sunglasses.jpg") no-repeat center/cover;
 }
 .category-item {
   display: flex;
@@ -89,17 +88,86 @@ a:hover {
   border-radius: 5px;
 }
 
-@media only screen and (max-width:900px){
-  .category-item {    
+@media only screen and (max-width: 900px) {
+  .category-item {
     width: 50%;
   }
 }
-@media only screen and (max-width:768px){
-  .category-item {    
+@media only screen and (max-width: 768px) {
+  .category-item {
     width: 100%;
   }
 }
+.featured-products .grid {
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
 
-.featured-products .product{
-  
+@media only screen and (max-width: 900px) {
+  .featured-products .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .featured-products .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.product-header {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  /* height: 300px; */
+}
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.product p {
+  margin-bottom: 5px;
+}
+
+.product .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.product .price {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #000;
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.2s ease-in-out;
+}
+footer {
+  background-color: #000;
+  color: whitesmoke;
+  text-align: center;
+  padding: 40px 0;
 }
