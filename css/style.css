@@ -62,6 +62,7 @@ a:hover {
   height: 300px;
   width: 33.33%;
   flex-grow: 1;
+  border: 2px solid white;
 }
 
 .shoes {
